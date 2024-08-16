@@ -1,0 +1,38 @@
+function sayHello() {
+    console.log("Hello, world!");
+}
+
+
+setTimeout(sayHello, 2000);
+
+console.log("This message will appear first.");
+
+
+
+
+
+// another code for "settimeout"
+
+
+
+function loadHeader() {
+    console.log("Header loaded.");
+}
+
+function loadMainContent() {
+    console.log("Main content loaded.");
+}
+
+function loadFooter() {
+    console.log("Footer loaded.");
+}
+
+console.log("Starting to load the webpage...");
+
+setTimeout(loadHeader, 1000);
+
+setTimeout(loadMainContent, 3000);
+
+setTimeout(loadFooter, 5000);
+
+console.log("Page structure initialized.");
