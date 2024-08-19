@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Example</title>
+</head>
+<body>
+    <h1>Debugging JavaScript Example</h1>
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateSum() {
+            var numbers = [10, 20, 30, 40, 50];
+            var sum = 0;
+            for (var i = 0; i <= numbers.length; i++) {
+                sum += numbers[i];
+
+                console.log("Current index:", i);
+                console.log("Current number:", numbers[i]);
+                console.log("Current sum:", sum);
+            }
+
+            document.getElementById("result").innerText = "Sum: " + sum;
+        }
+    </script>
+</body>
+</html>
